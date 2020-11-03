@@ -1,0 +1,57 @@
+﻿<Window x:Class="GreenhouseCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenhouseCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="375.141" Width="344.852">
+    <Grid>
+        <ComboBox x:Name="CbSeed1" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" TabIndex="1" SelectionChanged="CbSeed_SelectionChanged"/>
+        <ComboBox x:Name="CbSeed2" HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+        <ComboBox x:Name="CbSeed3" HorizontalAlignment="Left" Height="20" Margin="10,60,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+        <ComboBox x:Name="CbSeed4" HorizontalAlignment="Left" Height="20" Margin="10,85,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+        <ComboBox x:Name="CbSeed5" HorizontalAlignment="Left" Height="20" Margin="10,110,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+        <ComboBox x:Name="CbSeedCount1" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+            <ComboBoxItem Content="0"></ComboBoxItem>
+            <ComboBoxItem Content="1"></ComboBoxItem>
+            <ComboBoxItem Content="2"></ComboBoxItem>
+            <ComboBoxItem Content="3"></ComboBoxItem>
+            <ComboBoxItem Content="4"></ComboBoxItem>
+            <ComboBoxItem Content="5"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="CbSeedCount2" HorizontalAlignment="Left" Margin="195,35,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+            <ComboBoxItem Content="0"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="CbSeedCount3" HorizontalAlignment="Left" Margin="195,60,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+            <ComboBoxItem Content="0"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="CbSeedCount4" HorizontalAlignment="Left" Margin="195,85,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+            <ComboBoxItem Content="0"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="CbSeedCount5" HorizontalAlignment="Left" Margin="195,110,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+            <ComboBoxItem Content="0"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
