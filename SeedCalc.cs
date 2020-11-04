@@ -4,100 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace GreenhouseCalc
 {
     public class SeedCalc
-    {
-        public SeedCalc()
-        {
-            SeedList.AddRange(new List<Seed>
-            {
-                 new Seed("Mixed Herb Seeds",27,1),
-                 new Seed("Western Fodlan Seeds",9,1) ,
-                 new Seed("Root Vegetable Seeds",49,1) ,
-                 new Seed("Vegetable Seeds",49,1) ,
-                 new Seed("Northern Fodlan Seeds",53,2) ,
-                 new Seed("Morfis-Plum Seeds",18,4) ,
-                 new Seed("Southern Fodlan Seeds",37,2) ,
-                 new Seed("Morfis Seeds",23,2) ,
-                 new Seed("Nordsalat Seeds",3,4) ,
-                 new Seed("Boa-Fruit Seeds",31,5) ,
-                 new Seed("Albinean Seeds",20,2) ,
-                 new Seed("Eastern Fodlan Seeds",42,2) ,
-                 new Seed("Angelica Seeds",34,5) ,
-                 new Seed("Mixed Fruit Seeds",44,1) ,
-                 new Seed("Red Flower Seeds",24,3) ,
-                 new Seed("White Flower Seeds",5,3) ,
-                 new Seed("Blue Flower Seeds",38,3) ,
-                 new Seed("Purple Flower Seeds",16,3) ,
-                 new Seed("Yellow Flower Seeds",55,3) ,
-                 new Seed("Green Flower Seeds",10,3) ,
-                 new Seed("Pale-Blue Flower Seeds",1,3)
-             });
-
-            ItemList.AddRange(new List<string>
-            {
-                "Albinean Seeds",
-                "Angelica Seeds",
-                "Blue Flower Seeds",
-                "Boa-Fruit Seeds",
-                "Eastern Fodlan Seeds",
-                "Green Flower Seeds",
-                "Mixed Fruit Seeds",
-                "Mixed Herb Seeds",
-                "Morfis Seeds",
-                "Morfis-Plum Seeds",
-                "Nordsalat Seeds",
-                "Northern Fodlan Seeds",
-                "Pale-Blue Flower Seeds",
-                "Purple Flower Seeds",
-                "Red Flower Seeds",
-                "Root Vegetable Seeds",
-                "Southern Fodlan Seeds",
-                "Vegetable Seeds",
-                "Western Fodlan Seeds",
-                "White Flower Seeds",
-                "Yellow Flower Seeds",
-                "Ailell Grass",
-                "Albinean Berries",
-                "Angelica",
-                "Boa Fruit",
-                "Cabbage",
-                "Carrot",
-                "Chickpeas",
-                "Dried Vegetables",
-                "Magdred Kirsch",
-                "Morfis Plum",
-                "Noa Fruit",
-                "Nordsalat",
-                "Onion",
-                "Peach Currant",
-                "Tomato",
-                "Turnip",
-                "Verona",
-                "Weeds",
-                "Zanado Fruit",
-                "Zanado Treasure Fruit",
-                "Anemone",
-                "Baby's Breath",
-                "Carnation",
-                "Daffodil",
-                "Forget-me-nots",
-                "Lavender",
-                "Lily",
-                "Lily of the Valley",
-                "Pitcher Plant",
-                "Rose",
-                "Sunflower",
-                "Violet"
-            });
-
-            InitializeYieldTiers();
-        }
+    {        
         public List<Seed> SeedList = new List<Seed>();
 
-        public List<string> ItemList = new List<string>();
+        public List<Item> ItemList = new List<Item>();
 
         public List<YieldTier> YieldTiers = new List<YieldTier>();
 
@@ -109,6 +22,38 @@ namespace GreenhouseCalc
         public Seed GetSeedByName(string name)
         {
             return SeedList.Single(x => x.Name == name);
+        }
+
+        public decimal GetScore(Seed[] seeds, int cultivation) {
+            var combinedRank = 0;
+            var combinedGrade = 0;
+            foreach (var seed in seeds) 
+            {
+                combinedRank += seed.Rank;
+                combinedGrade += seed.Grade;
+            }
+
+            return      ((12 - (combinedRank % 12)) * 5) +
+                        (4 * (combinedGrade / 5)) +
+                        ((cultivation + 4)* 2);
+        }
+
+        public YieldTier GetTier(decimal score) {
+            return YieldTiers.Single(x => x.ScoreRange[0] <= score &&
+                                          x.ScoreRange[1] >= score);
+        }
+
+        public List<(string, decimal)> GetPossibleItems(Seed seed, YieldTier tier)
+        {
+            var possibleItems = ItemList.Where(item => 
+                    item.Seeds.Any(s => s.Name == seed.Name &&
+                                    s.Tiers.Any(t => Math.Floor(t.Tier) == Math.Floor(tier.Tier))));
+            
+            foreach (var item in possibleItems) {
+                // take count for each applicable tier
+                // count x ratio for that tier
+                // add them together probably???
+            }
         }
 
         public void InitializeYieldTiers() {

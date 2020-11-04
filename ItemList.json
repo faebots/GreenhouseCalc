@@ -1,0 +1,3582 @@
+[
+    {
+        "Name": "Albinean Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Albinean Seeds",
+                "Tiers":
+                [
+                    {
+                        "Tier":1,                        
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis-Plum Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Vegetable Seeds",
+                "Tiers":
+                [
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name": "Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Angelica Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Angelica Seeds",
+                "Tiers":
+                [
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Boa-Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Nordsalat Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Blue Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers": [
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Eastern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Boa-Fruit Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Boa-Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Angelica Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Eastern Fodlan Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Eastern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis-Plum Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Green Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Eastern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Mixed Fruit Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Albinean Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Herb Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Mixed Herb Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Boa-Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }   
+                ]
+            },
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Morfis Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Morfis Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Eastern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Morfis-Plum Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Morfis-Plum Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Angelica Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Nordsalat Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Nordsalat Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis-Plum Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Eastern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Northern Fodlan Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":2
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Southern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Herb Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pale-Blue Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Nordsalat Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Purple Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis-Plum Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Red Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Southern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Boa-Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Root Vegetable Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Root Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count": 1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Albinean Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Southern Fodlan Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Southern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Vegetable Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Vegetable Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Western Fodlan Seeds",
+        "Seeds": 
+        [
+            {
+                "Name": "Western Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Southern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Herb Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Angelica Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3.5,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "White Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Morfis Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Fruit Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Green Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Pale-Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Albinean Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Yellow Flower Seeds",
+        "Seeds": 
+        [
+            {
+                "Name":"Red Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Yellow Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":1
+                    },
+                    {
+                        "Tier":1.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Mixed Herb Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Northern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Albinean Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"White Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Blue Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2.5,
+                        "Count":1
+                    },
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Purple Flower Seeds",
+                "Tiers":[
+                    {
+                        "Tier":2,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Southern Fodlan Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            },
+            {
+                "Name":"Angelica Seeds",
+                "Tiers":[
+                    {
+                        "Tier":3,
+                        "Count":1
+                    }
+                ]
+            }          
+        ]
+    },
+    {
+        "Name": "Ailell Grass",
+        "Seeds": 
+        [
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+
+        ]
+    },
+    {
+        "Name": "Albinean Berries",
+        "Seeds": 
+        [
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier": 1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier": 1.5,
+                    "Count": 1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Angelica",
+        "Seeds": 
+        [
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":3
+                },
+                {
+                    "Tier":2.5,
+                    "Count":3
+                },
+                {
+                    "Tier":3,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Boa Fruit",
+        "Seeds": 
+        [
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":3
+                },
+                {
+                    "Tier":2,
+                    "Count":3
+                },
+                {
+                    "Tier":2.5,
+                    "Count":3
+                },
+                {
+                    "Tier":3,
+                    "Count":2
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Cabbage",
+        "Seeds": 
+        [
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Carrot",
+        "Seeds": 
+        [
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Chickpeas",
+        "Seeds": 
+        [
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Dried Vegetables",
+        "Seeds": 
+        [
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Magdred Kirsch",
+        "Seeds": 
+        [
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Morfis Plum",
+        "Seeds": 
+        [
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":3,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Noa Fruit",
+        "Seeds": 
+        [
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Nordsalat",
+        "Seeds": 
+        [
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":3
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Onion",
+        "Seeds": 
+        [
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Peach Currant",
+        "Seeds": 
+        [
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier": 1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Tomato",
+        "Seeds": 
+        [
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Turnip",
+        "Seeds": 
+        [
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Verona",
+        "Seeds": 
+        [
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Weeds",
+        "Seeds": 
+        [
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":3
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Zanado Fruit",
+        "Seeds": 
+        [
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                }
+            ]},
+            {
+                "Name": "Albinean Seeds","Tiers":[
+                    {
+                        "Tier":1,
+                        "Count":2
+                    }
+                ]
+            },
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Zanado Treasure Fruit",
+        "Seeds": 
+        [
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Anemone",
+        "Seeds": 
+        [
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Baby's Breath",
+        "Seeds": 
+        [
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Southern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Carnation",
+        "Seeds": 
+        [
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Daffodil",
+        "Seeds": 
+        [
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Herb Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Nordsalat Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Forget-me-nots",
+        "Seeds": 
+        [
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Morfis-Plum Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Lavender",
+        "Seeds": 
+        [
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Lily",
+        "Seeds": 
+        [
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Angelica Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":"1"
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Lily of the Valley",
+        "Seeds": 
+        [
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Vegetable Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Mixed Fruit Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Pitcher Plant",
+        "Seeds": 
+        [
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Eastern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Rose",
+        "Seeds": 
+        [
+            {"Name":"Red Flower Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":2
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":2
+                }
+            ]},
+            {"Name":"Pale-Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Northern Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Sunflower",
+        "Seeds": 
+        [
+            {"Name":"Yellow Flower Seeds","Tiers":[
+                {
+                    "Tier":1,
+                    "Count":1
+                },
+                {
+                    "Tier":1.5,
+                    "Count":2
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                },
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Western Fodlan Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Boa-Fruit Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"White Flower Seeds","Tiers":[
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]}
+        ]
+    },
+    {
+        "Name": "Violet",
+        "Seeds": 
+        [
+            {"Name":"Purple Flower Seeds","Tiers":[
+                {
+                    "Tier":1.5,
+                    "Count":1
+                },
+                {
+                    "Tier":2,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Blue Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                },
+                {
+                    "Tier":3,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Green Flower Seeds","Tiers":[
+                {
+                    "Tier":2.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Root Vegetable Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]},
+            {"Name":"Albinean Seeds","Tiers":[
+                {
+                    "Tier":3.5,
+                    "Count":1
+                }
+            ]}
+        ]
+    }
+]

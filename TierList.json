@@ -1,0 +1,36 @@
+[{
+    "Tier":1,
+    "ScoreRange":[0,20],
+    "Ratio":0.7,
+    "StatCoefficient":1
+},
+{
+    "Tier":1.5,
+    "ScoreRange":[21,40],
+    "Ratio":0.8,
+    "StatCoefficient":3
+},
+{
+    "Tier":2,
+    "ScoreRange":[41,60],
+    "Ratio":0.7,
+    "StatCoefficient":5
+},
+{
+    "Tier":2.5,
+    "ScoreRange":[61,80],
+    "Ratio":0.6,
+    "StatCoefficient":10
+},
+{
+    "Tier":3,
+    "ScoreRange":[81,90],
+    "Ratio":0.8,
+    "StatCoefficient":15
+},
+{
+    "Tier":3.5,
+    "ScoreRange":[91,100],
+    "Ratio":0.7,
+    "StatCoefficient":20   
+}]

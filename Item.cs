@@ -9,33 +9,16 @@ namespace GreenhouseCalc
     public class Item
     {
         public string Name;
-        public string Seed;
-        public string Row;
+        public List<SeedTier> Seeds;
+    }
+
+    public class SeedTier {
+        public string Name;
+        public List<TierCount> Tiers;
+    }
+
+    public class TierCount {
+        public decimal Tier;
         public int Count;
-
-        public Item(string _name, string _seed, int _count)
-        {
-            this.Name = _name;
-            this.Seed = _seed;
-            this.Count = _count;
-        }
-
-        public Item(string _name, string _seed)
-        {
-            this.Name = _name;
-            this.Seed = _seed;
-            this.Count = 1;
-        }
-
-        public Item(string _name)
-        {
-            this.Name = _name;
-            this.Count = 1;
-        }
-        public Item (string _name, int _count)
-        {
-            this.Name = _name;
-            this.Count = _count;
-        }
     }
 }
