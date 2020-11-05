@@ -9,7 +9,7 @@ namespace GreenhouseCalc
     public class YieldTier
     {
         public decimal Tier;
-        public int[] ScoreRange;
+        public (int Lower, int Upper) ScoreRange;
         public decimal Ratio;
         public int StatCoefficient;
     }

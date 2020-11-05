@@ -8,25 +8,33 @@ namespace GreenhouseCalc
 {
     public class Seed
     {
-        public Seed(string name, int rank, int grade)
-        {
-            this.Name = name;
-            this.Rank = rank;
-            this.Grade = grade;
-        }
         public string Name { get; set; }
         public int Rank { get; set; }
         public int Grade { get; set; }
 
-        public override string ToString()
-        {
-            return Name;
-        }
-
         public override bool Equals(object obj)
         {
-            Seed seed = (Seed)obj;
-            return (seed.Name == this.Name);
+            if (obj is string)
+                return (string)obj == Name;
+            else if (obj is Seed)
+            {
+                var obj2 = obj as Seed;
+                return obj2.Name == Name;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator ==(Seed x, Seed y)
+        {
+            return x.Equals(y);
+        }
+
+        public static bool operator !=(Seed x, Seed y)
+        {
+            return !(x == y);
         }
     }
 }

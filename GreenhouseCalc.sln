@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenhouseCalc", "GreenhouseCalc\GreenhouseCalc.csproj", "{8B89B2E0-0779-4D47-A086-F5B461D258DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenhouseConsoleTesting", "GreenhouseConsoleTesting\GreenhouseConsoleTesting.csproj", "{793DC1DD-1C6A-49E9-862A-64878543050E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenhouseTestingFramework", "GreenhouseTestingFramework\GreenhouseTestingFramework.csproj", "{0BB9845F-29DD-4792-8F64-223A0CBABC84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8B89B2E0-0779-4D47-A086-F5B461D258DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B89B2E0-0779-4D47-A086-F5B461D258DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B89B2E0-0779-4D47-A086-F5B461D258DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{793DC1DD-1C6A-49E9-862A-64878543050E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{793DC1DD-1C6A-49E9-862A-64878543050E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{793DC1DD-1C6A-49E9-862A-64878543050E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{793DC1DD-1C6A-49E9-862A-64878543050E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB9845F-29DD-4792-8F64-223A0CBABC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB9845F-29DD-4792-8F64-223A0CBABC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB9845F-29DD-4792-8F64-223A0CBABC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB9845F-29DD-4792-8F64-223A0CBABC84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,56 @@
+[
+    {
+        "Tier": 1,
+        "ScoreRange": {
+            "Item1": 0,
+            "Item2": 20
+        },
+        "Ratio": 0.7,
+        "StatCoefficient": 1
+    },
+    {
+        "Tier": 1.5,
+        "ScoreRange": {
+            "Item1": 21,
+            "Item2": 40
+        },
+        "Ratio": 0.8,
+        "StatCoefficient": 3
+    },
+    {
+        "Tier": 2,
+        "ScoreRange": {
+            "Item1": 41,
+            "Item2": 60
+        },
+        "Ratio": 0.7,
+        "StatCoefficient": 5
+    },
+    {
+        "Tier": 2.5,
+        "ScoreRange": {
+            "Item1": 61,
+            "Item2": 80
+        },
+        "Ratio": 0.6,
+        "StatCoefficient": 10
+    },
+    {
+        "Tier": 3,
+        "ScoreRange": {
+            "Item1": 81,
+            "Item2": 90
+        },
+        "Ratio": 0.8,
+        "StatCoefficient": 15
+    },
+    {
+        "Tier": 3.5,
+        "ScoreRange": {
+            "Item1": 91,
+            "Item2": 10
+        },
+        "Ratio": 0.7,
+        "StatCoefficient": 20
+    }
+]

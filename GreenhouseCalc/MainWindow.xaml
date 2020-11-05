@@ -5,53 +5,133 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GreenhouseCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="375.141" Width="344.852">
+        Title="MainWindow" Width="440" MinWidth="432" MinHeight="535">
     <Grid>
-        <ComboBox x:Name="CbSeed1" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" TabIndex="1" SelectionChanged="CbSeed_SelectionChanged"/>
-        <ComboBox x:Name="CbSeed2" HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
-        <ComboBox x:Name="CbSeed3" HorizontalAlignment="Left" Height="20" Margin="10,60,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
-        <ComboBox x:Name="CbSeed4" HorizontalAlignment="Left" Height="20" Margin="10,85,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
-        <ComboBox x:Name="CbSeed5" HorizontalAlignment="Left" Height="20" Margin="10,110,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
-        <ComboBox x:Name="CbSeedCount1" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
-            <ComboBoxItem Content="0"></ComboBoxItem>
-            <ComboBoxItem Content="1"></ComboBoxItem>
-            <ComboBoxItem Content="2"></ComboBoxItem>
-            <ComboBoxItem Content="3"></ComboBoxItem>
-            <ComboBoxItem Content="4"></ComboBoxItem>
-            <ComboBoxItem Content="5"></ComboBoxItem>
-        </ComboBox>
-        <ComboBox x:Name="CbSeedCount2" HorizontalAlignment="Left" Margin="195,35,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
-            <ComboBoxItem Content="0"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
-            <ComboBoxItem Content="5"/>
-        </ComboBox>
-        <ComboBox x:Name="CbSeedCount3" HorizontalAlignment="Left" Margin="195,60,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
-            <ComboBoxItem Content="0"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
-            <ComboBoxItem Content="5"/>
-        </ComboBox>
-        <ComboBox x:Name="CbSeedCount4" HorizontalAlignment="Left" Margin="195,85,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
-            <ComboBoxItem Content="0"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
-            <ComboBoxItem Content="5"/>
-        </ComboBox>
-        <ComboBox x:Name="CbSeedCount5" HorizontalAlignment="Left" Margin="195,110,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
-            <ComboBoxItem Content="0"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
-            <ComboBoxItem Content="5"/>
-        </ComboBox>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="275*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="32*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="29*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0">
+                    <ComboBox x:Name="CbSeed1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" TabIndex="1" SelectionChanged="CbSeed_SelectionChanged"/>
+                    <ComboBox x:Name="CbSeed2" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+                    <ComboBox x:Name="CbSeed3" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+                    <ComboBox x:Name="CbSeed4" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
+                    <ComboBox x:Name="CbSeed5" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="CbSeed_SelectionChanged"/>
 
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <ComboBox x:Name="CbSeedCount1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+                        <ComboBoxItem Content="0"></ComboBoxItem>
+                        <ComboBoxItem Content="1"></ComboBoxItem>
+                        <ComboBoxItem Content="2"></ComboBoxItem>
+                        <ComboBoxItem Content="3"></ComboBoxItem>
+                        <ComboBoxItem Content="4"></ComboBoxItem>
+                        <ComboBoxItem Content="5"></ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox x:Name="CbSeedCount2" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                    </ComboBox>
+                    <ComboBox x:Name="CbSeedCount3" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                    </ComboBox>
+                    <ComboBox x:Name="CbSeedCount4" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                    </ComboBox>
+                    <ComboBox x:Name="CbSeedCount5" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" Height="20" SelectedIndex="0" SelectionChanged="CbSeedCount_SelectionChanged">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Margin="10,10,0,0">
+                    <Label FontWeight="Bold">Cultivation Tier</Label>
+                    <RadioButton GroupName="cultivationTier" IsChecked="True" Name="tier1" Margin="0,0,0,0">Infuse with magic</RadioButton>
+                    <RadioButton GroupName="cultivationTier" Name="tier2" Margin="0,5,0,0">Pour Airmid water</RadioButton>
+                    <RadioButton GroupName="cultivationTier" Name="tier3" Margin="0,5,0,0">Prune</RadioButton>
+                    <RadioButton GroupName="cultivationTier" Name="tier4" Margin="0,5,0,0">Scatter Bonemeal</RadioButton>
+                    <RadioButton GroupName="cultivationTier" Name="tier5" Margin="0,5,0,0">Use Caledonian soil</RadioButton>
+                    <RadioButton GroupName="cultivationTier" Name="tier6" Margin="0,5,0,0">Spread pegasus blessings</RadioButton>
+                </StackPanel>
+            </Grid>
+            <Button Name="SubmitBtn" Grid.Row="0" HorizontalAlignment="Center" Click="Button_Click" MinWidth="100" MinHeight="33" Margin="20" IsEnabled="False">Calculate Yield</Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="ResultsGrid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="resultHeader" Grid.Row="0" Grid.ColumnSpan="11" HorizontalAlignment="Center" Margin="10,5">Seed 1</Label>
+                <Label x:Name="resultItem1" Grid.Row="1" Grid.Column="0">Item 1</Label>
+                <Label x:Name="resultItem2" Grid.Row="1" Grid.Column="1">Item 2</Label>
+                <Label x:Name="resultItem3" Grid.Row="1" Grid.Column="2">Item 3</Label>
+                <Label x:Name="resultItem4" Grid.Row="1" Grid.Column="3">Item 4</Label>
+                <Label x:Name="resultItem5" Grid.Row="1" Grid.Column="4">Item 5</Label>
+                <Label x:Name="resultItem6" Grid.Row="1" Grid.Column="5">Item 6</Label>
+                <Label x:Name="resultItem7" Grid.Row="1" Grid.Column="6">Item 7</Label>
+                <Label x:Name="resultItem8" Grid.Row="1" Grid.Column="7">Item 8</Label>
+                <Label x:Name="resultItem9" Grid.Row="1" Grid.Column="8">Item 9</Label>
+                <Label x:Name="resultItem10" Grid.Row="1" Grid.Column="9">Item 10</Label>
+
+                <Label x:Name="resultPerc1" Grid.Row="2" Grid.Column="0">10%</Label>
+                <Label x:Name="resultPerc2" Grid.Row="2" Grid.Column="1">10%</Label>
+                <Label x:Name="resultPerc3" Grid.Row="2" Grid.Column="2">10%</Label>
+                <Label x:Name="resultPerc4" Grid.Row="2" Grid.Column="3">10%</Label>
+                <Label x:Name="resultPerc5" Grid.Row="2" Grid.Column="4">10%</Label>
+                <Label x:Name="resultPerc6" Grid.Row="2" Grid.Column="5">10%</Label>
+                <Label x:Name="resultPerc7" Grid.Row="2" Grid.Column="6">10%</Label>
+                <Label x:Name="resultPerc8" Grid.Row="2" Grid.Column="7">10%</Label>
+                <Label x:Name="resultPerc9" Grid.Row="2" Grid.Column="8">10%</Label>
+                <Label x:Name="resultPerc10" Grid.Row="2" Grid.Column="9">10%</Label>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

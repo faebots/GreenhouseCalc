@@ -1,0 +1,106 @@
+[
+    {
+        "Name":"Mixed Herb Seeds",
+        "Rank":27,
+        "Grade":1
+    },
+    {
+        "Name":"Western Fodlan Seeds",
+        "Rank":9,
+        "Grade":1
+    },
+    {
+        "Name":"Root Vegetable Seeds",
+        "Rank":49,
+        "Grade":1
+    },
+    {
+        "Name":"Vegetable Seeds",
+        "Rank":33,
+        "Grade":1
+    },
+    {
+        "Name":"Northern Fodlan Seeds",
+        "Rank":53,
+        "Grade":2
+    },
+    {
+        "Name":"Morfis-Plum Seeds",
+        "Rank":18,
+        "Grade":4
+    },{
+        "Name":"Southern Fodlan Seeds",
+        "Rank":37,
+        "Grade":2
+    },
+    {
+        "Name":"Morfis Seeds",
+        "Rank":23,
+        "Grade":2
+    },
+    {
+        "Name":"Nordsalat Seeds",
+        "Rank":3,
+        "Grade":4
+    },
+    {
+        "Name":"Boa-Fruit Seeds",
+        "Rank":31,
+        "Grade":5
+    },
+    {
+        "Name":"Albinean Seeds",
+        "Rank":20,
+        "Grade":2
+    },
+    {
+        "Name":"Eastern Fodlan Seeds",
+        "Rank":42,
+        "Grade":2
+    },
+    {
+        "Name":"Angelica Seeds",
+        "Rank":34,
+        "Grade":5
+    },
+    {
+        "Name":"Mixed Fruit Seeds",
+        "Rank":44,
+        "Grade":1
+    },
+    {
+        "Name":"Red Flower Seeds",
+        "Rank":24,
+        "Grade":3
+    },
+    {
+        "Name":"White Flower Seeds",
+        "Rank":5,
+        "Grade":3
+    },
+    {
+        "Name":"Blue Flower Seeds",
+        "Rank":38,
+        "Grade":3
+    },{
+        "Name":"Purple Flower Seeds",
+        "Rank":16,
+        "Grade":3
+    },
+    {
+        "Name":"Yellow Flower Seeds",
+        "Rank":55,
+        "Grade":3
+    },
+    {
+        "Name":"Green Flower Seeds",
+        "Rank":10,
+        "Grade":3
+    },
+    {
+        "Name":"Pale-Blue Flower Seeds",
+        "Rank":1,
+        "Grade":3
+    }
+    
+]
