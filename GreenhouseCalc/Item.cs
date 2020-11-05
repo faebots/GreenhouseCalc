@@ -15,6 +15,7 @@ namespace GreenhouseCalc
     public class SeedTier {
         public string Name;
         public List<TierCount> Tiers;
+
     }
 
     public class TierCount {

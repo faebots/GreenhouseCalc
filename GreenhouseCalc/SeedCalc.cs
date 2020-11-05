@@ -43,6 +43,11 @@ namespace GreenhouseCalc
             return SeedList.Single(x => x.Name == name);
         }
 
+        private YieldTier GetTierByTier (decimal tier)
+        {
+            return YieldTiers.SingleOrDefault(x => x.Tier == tier);
+        }
+
         private decimal GetScore(List<Seed> seeds, int cultivation) {
             decimal combinedRank = 0;
             decimal combinedGrade = 0;
@@ -107,11 +112,29 @@ namespace GreenhouseCalc
             }
             return results;
         }
+
+        public List<SeedTier> OrderPossibleSeedsByProbability (Item )
+        {
+
+        }
         public List<ItemSet> OptimizeItemChances(string itemName)
         {
             var item = ItemList.SingleOrDefault(x => x.Name == itemName);
             if (item == null)
                 return null;
+
+
+            var possibleSeeds = item.Seeds.SelectMany(x => x.Tiers.Select(y => new SeedTier
+            {
+                Name = x.Name,
+                Tiers = new List<TierCount>
+                { new TierCount { Tier = y.Tier,
+                    Count = y.Count } }
+            }).OrderByDescending(x => x.Tiers[0].Tier * x.Tiers[0].Count);
+
+
+
+
 
 
             return new List<ItemSet>();
