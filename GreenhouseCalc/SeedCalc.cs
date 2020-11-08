@@ -150,16 +150,36 @@ namespace GreenhouseCalc
                         }
                     }
                 }));
+
+                if (opposingTier == null)
+                {
+                    ratio = 1 - ratio;
+                    total = tier.RowRatio * ratio;
+                    decimal subtier;
+                    if (tier.MainTier == tier.Tier)
+                        subtier = tier.Tier + (decimal)0.5;
+                    else
+                        subtier = tier.MainTier;
+
+                    seedTiers.Add((total, new SeedTier
+                    {
+
+                        Name = tier.Name,
+                        Tiers = new List<TierCount>()
+                        {
+                            new TierCount()
+                            {
+                                Count = tier.Count,
+                                Tier = subtier
+                            }
+                        }
+                    }));
+                }
             }
 
             seedTiers = seedTiers.OrderByDescending(x => x.Item1).ToList();
 
             return seedTiers;
-        }
-
-        List<int> GetModList(int modulo)
-        {
-            return Enumerable.Range(1, 22).Select(x => x * 12 + modulo).ToList();
         }
 
         public (int,int) GetTierMinMaxRankSum(YieldTier tier)
@@ -262,74 +282,6 @@ namespace GreenhouseCalc
                     maxRatioSeeds = combo;
                     optimalCultivationTier = GetOptimalCultivationTier(combo, tier);
                 }
-        public decimal GetTotalTierRatio(TierCount tc, List<TierCount> allTiers)
-        {
-            var opposingTier = allTiers.SingleOrDefault(x => x.Tier != tc.Tier && (Math.Floor(x.Tier) == Math.Floor(tc.Tier)));
-            var ratio = GetTierByTier(tc.Tier).Tier;
-            return (ratio * (tc.Count / 5)) + ((1 - ratio) * (opposingTier.Count / 5));
-        }
-
-        public List<(decimal,SeedTier)> OrderPossibleSeedsByProbability (Item item)
-        {
-            var seeds = item.Seeds;
-            var seedTiers = new List<(decimal, SeedTier)>();
-
-            var seedsByTier = seeds.SelectMany(x => x.Tiers.Select(y => new
-            {
-                Name = x.Name,
-                Count = y.Count,
-                RowRatio = (decimal)y.Count / 5,
-                Tier = y.Tier,
-                MainTier = Math.Floor(y.Tier)
-            }));
-            
-            foreach (var tier in seedsByTier)
-            {
-                var opposingTier = seedsByTier.SingleOrDefault(x => x.Name == tier.Name &&
-                                                                    x.MainTier == tier.MainTier &&
-                                                                    x.Tier != tier.Tier);
-
-                var ratio = GetTierByTier(tier.Tier).Ratio;
-                decimal opposingRatio = 0;
-                if (opposingTier != null)
-                    opposingRatio = (opposingTier.RowRatio * (1 - ratio));
-                var total = (tier.RowRatio * ratio) + opposingRatio;
-                seedTiers.Add((total, new SeedTier
-                {
-                    Name = tier.Name,
-                    Tiers = new List<TierCount>()
-                    {
-                        new TierCount()
-                        {
-                            Count = tier.Count,
-                            Tier = tier.Tier
-                        }
-                    }
-                }));
-            }
-
-            seedTiers = seedTiers.OrderByDescending(x => x.Item1).ToList();
-
-            return seedTiers;
-        }
-
-
-
-        public List<ItemSet> OptimizeItemChances(string itemName)
-        {
-            var item = ItemList.SingleOrDefault(x => x.Name == itemName);
-            if (item == null)
-                return null; 
-
-            var possibleSeeds = OrderPossibleSeedsByProbability(item);
-            var possibleSeedTypes = possibleSeeds.Select(x => x.Item2.Name).Distinct();
-
-            var listjson = JsonConvert.SerializeObject(possibleSeedTypes);
-            var listjson2 = JsonConvert.SerializeObject(possibleSeeds);
-
-            foreach (var seed in possibleSeedTypes)
-            {
-
             }
 
             return (optimalCultivationTier, maxRatioSeeds);
