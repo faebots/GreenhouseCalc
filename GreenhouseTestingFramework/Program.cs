@@ -11,6 +11,9 @@ namespace GreenhouseTestingFramework
     {
         static void Main(string[] args)
         {
+            var calc = new SeedCalc();
+            var seed = calc.SeedList[0].Name;
+            calc.OptimizeItemChances(seed);
             //CalcTest();
             Console.ReadLine();
         }
@@ -83,6 +86,6 @@ namespace GreenhouseTestingFramework
                 }
                 Console.Write("\n");
             }*/
-        }
+        //}
     }
 }
