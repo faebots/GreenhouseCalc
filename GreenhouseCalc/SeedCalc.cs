@@ -188,7 +188,7 @@ namespace GreenhouseCalc
             int modMax = 12;
             if (minScore > 0)
             {
-                modMax = (int)decimal.Floor(12 - (decimal)minScore / 5);
+                modMax = (int)decimal.Floor(Math.Abs(12 - (decimal)minScore / 5));
             }
 
             if (modMax > 11)
@@ -196,48 +196,108 @@ namespace GreenhouseCalc
 
             var maxScore = tier.ScoreRange.Upper - 10;
             var modMin = 12 - (int)decimal.Floor((decimal)maxScore / 5);
+
+            if (modMin < 0)
+                modMin = 0;
             return (modMin, modMax);
         }
 
-        public (int,int) GetTierMinMaxGradeSum(YieldTier tier)
+        public (int,int) GetTierMinMaxGradeSum(YieldTier tier, (int min, int max) minMaxMod, int currGradeSum)
         {
-            var minScore = tier.ScoreRange.Lower - 80;
-            var maxScore = tier.ScoreRange.Upper - 14;
+            var maxA = (12 - minMaxMod.min) * 5;
+            var minA = (12 - minMaxMod.max) * 5;
+
+            var minScore = tier.ScoreRange.Lower - (20 + maxA);
+            var maxScore = tier.ScoreRange.Upper - (10 + minA);
 
             int minGrade, maxGrade;
-            if (minScore < 0)
-                minGrade = 1;
-            else
-                minGrade = (int)Math.Floor((minScore * 5) / 4.0);
+            minGrade = (int)Math.Ceiling((minScore * 5) / 4.0) - currGradeSum;
+            if (minGrade < 0)
+                minGrade = 0;
 
-            maxGrade = (int)Math.Ceiling((maxScore * 5) / 4.0);
-            if (maxGrade > 25)
-                maxGrade = 25;
+            maxGrade = (int)Math.Ceiling((maxScore * 5) / 4.0) - currGradeSum;
+            if (maxGrade > 20)
+                maxGrade = 20;
 
             return (minGrade, maxGrade);
         }
 
-        public List<Seed> GetSeedCombo(Seed seed, YieldTier tier)
+        public List<Seed> GetComboFromSetTypes(YieldTier tier, List<Seed> seeds, (int,int) minMaxMod, (int,int) minMaxGrade)
         {
-            var seeds = new List<Seed>();
-            
-            for (int i = 0; i < 5; i ++ )
-            {
-                seeds.Add(seed);
-                var score = GetScore(seeds, 0);
-                if (score < (tier.ScoreRange.Upper - 10) &&
-                    score > (tier.ScoreRange.Lower - 20))
-                    return seeds;
-            }
+            var seedsUnique = seeds.Distinct().ToList();
+            if (seedsUnique.Count == 5)
+                return seeds;
 
-            seeds = new List<Seed>() { seed };
+            int remainingSpace = 5 - seedsUnique.Count;
+            while (seeds.Count)
+        }
+
+        public List<Seed> BuildSeedCombo (YieldTier tier, List<Seed> seeds, List<Seed> others)
+        {
+            var remainingSpaces = 5 - seeds.Count();
+            if (remainingSpaces < 1)
+                return null;
+            (int min, int max) minMaxMod = GetTierMinMaxRankSum(tier);
+            var currentGradeSum = seeds.Select(x => x.Grade).Sum();
+            (int min, int max) minMaxGradeSum = GetTierMinMaxGradeSum(tier, minMaxMod, currentGradeSum);
+            if (currentGradeSum == minMaxGradeSum.max)
+                return null;
+            var currentMod = seeds.Select(x => x.Rank).Sum() % 12;
+            var stack = new Stack<Seed>(others);
+
+            while (stack.Count() > 0)
+            {
+                var seed = stack.Pop();
+                if (minMaxGradeSum.max - currentGradeSum >= seed.Grade)
+                {
+                    others = stack.Where(x => x.Grade <= minMaxGradeSum.max - currentGradeSum).ToList();
+
+
+                } else
+                {
+
+                }
+
+            }
+        }
+
+        public List<Seed> GetSeedCombo(Seed seed, YieldTier tier, Item item)
+        {
+            var seeds = new List<Seed>() { seed };
+            if (GetScore(seeds, 6) > tier.ScoreRange.Lower && GetScore(seeds, 1) < tier.ScoreRange.Upper)
+                return seeds;
+
+
             var rank = seed.Rank;
             var grade = seed.Grade;
+            var seedMod = rank % 12;
+            (int min, int max) minMaxMod = GetTierMinMaxRankSum(tier);
+            for (int i = 2; i < 6; i++)
+            {
+                var seedComboMod = (seedMod * i) % 12;
+                if (seedComboMod < minMaxMod.min || seedComboMod > minMaxMod.max)
+                    continue;
 
+                var rankCalc = (12 - seedComboMod) * 5;
+                var gradeCalc = Math.Floor(((grade * i) / 5.0) * 4);
+                if (rankCalc + gradeCalc > tier.ScoreRange.Lower - 20 ||
+                    rankCalc + gradeCalc < tier.ScoreRange.Upper - 10)
+                    return Enumerable.Repeat(seed, i).ToList();
+            }
+            
             var maxB = 4 * (grade + 20) / 5;
             var minB = 4 * (grade + 1) / 5;
 
-            var minScore = 
+            minMaxMod.min = minMaxMod.max - seedMod;
+            if (minMaxMod.min < 0)
+                minMaxMod.min = 0;
+            minMaxMod.max = minMaxMod.max - (seed.Rank % 12);
+            var otherSeeds = OrderPossibleSeedsByProbability(item).Where(x => x.Item2.Name != seed.Name &&
+                                                                              x.Item2.Tiers.Any(y => Math.Floor(y.Tier) == Math.Floor(tier.Tier)))
+                                                                  .Select(x => GetSeedByName(x.Item2.Name)).ToList();
+            otherSeeds.Reverse();
+            var seedStack = new Stack<Seed>(otherSeeds);
+            var combo = BuildSeedCombo(tier, seeds, seedStack);
 
             return seeds;
         }
@@ -274,7 +334,7 @@ namespace GreenhouseCalc
                 var ratio = seedRatio.Item1;
                 var seed = GetSeedByName(seedRatio.Item2.Name);
                 var tier = GetTierByTier(seedRatio.Item2.Tiers[0].Tier);
-                var combo = GetSeedCombo(seed, tier);
+                var combo = GetSeedCombo(seed, tier, item);
                 var seedTypeRatio = (decimal)combo.Count(x => x.Name == seed.Name) / combo.Count;
                 if (seedTypeRatio * ratio > maxRatio)
                 {
