@@ -11,7 +11,14 @@ namespace GreenhouseCalc
         public string Name { get; set; }
         public int Rank { get; set; }
         public int Grade { get; set; }
-
+        public decimal? Probability { get; set; }
+        public Seed(string _name, int _rank, int _grade, decimal? _prob)
+        {
+            Name = _name;
+            Rank = _rank;
+            Grade = _grade;
+            Probability = _prob;
+        }
         public override bool Equals(object obj)
         {
             if (obj is string)

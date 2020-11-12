@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using Newtonsoft.Json;
+using System.CodeDom.Compiler;
 
 namespace GreenhouseCalc
 {
@@ -72,6 +73,13 @@ namespace GreenhouseCalc
             return result;
         }
 
+        private YieldTier GetTierNoCultivation(decimal score)
+        {
+            var result = YieldTiers.Single(x => x.ScoreRange.Lower <= score + 20 &&
+                                                x.ScoreRange.Upper >= score + 10);
+            return result;
+        }
+
         private List<ItemChance> GetPossibleItems(Seed seed, YieldTier tier)
         {
             var baseTier = decimal.Floor(tier.Tier);
@@ -113,7 +121,7 @@ namespace GreenhouseCalc
             return results;
         }
         
-        public List<(decimal,SeedTier)> OrderPossibleSeedsByProbability (Item item)
+        public List<(YieldTier,Seed)> OrderPossibleSeedsByProbability (Item item)
         {
             var seeds = item.Seeds;
             var seedTiers = new List<(decimal, SeedTier)>();
@@ -178,8 +186,11 @@ namespace GreenhouseCalc
             }
 
             seedTiers = seedTiers.OrderByDescending(x => x.Item1).ToList();
-
-            return seedTiers;
+            var result = seedTiers.Select(x => (x.Item1, x.Item2, GetSeedByName(x.Item2.Name)))
+                                  .Select(x => (GetTierByTier(x.Item2.Tiers.First().Tier),
+                                                new Seed(x.Item3.Name, x.Item3.Rank, x.Item3.Grade, x.Item1)))
+                                  .ToList();
+            return result;
         }
 
         public (int,int) GetTierMinMaxRankSum(YieldTier tier)
@@ -222,43 +233,100 @@ namespace GreenhouseCalc
             return (minGrade, maxGrade);
         }
 
-        public List<Seed> GetComboFromSetTypes(YieldTier tier, List<Seed> seeds, (int,int) minMaxMod, (int,int) minMaxGrade)
+        public List<Seed> BuildSeedComboLimited (YieldTier tier, List<Seed> currentCombo)
         {
-            var seedsUnique = seeds.Distinct().ToList();
-            if (seedsUnique.Count == 5)
-                return seeds;
 
-            int remainingSpace = 5 - seedsUnique.Count;
-            while (seeds.Count)
+            if (GetTierNoCultivation(GetScore(currentCombo, 0)).Tier == tier.Tier)
+                return currentCombo;
+            if (currentCombo.Count > 4 || !currentCombo.Any())
+                return null;
+
+            //sort current seeds by probability
+            var possibleTypes = currentCombo.Distinct().OrderByDescending(x => x.Probability);
+            var result = new List<Seed>();
+            foreach (var seed in possibleTypes)
+            {
+                //add one of the next best seed, down the list
+                var possibleCombo = currentCombo;
+                possibleCombo.Add(seed);
+                result = BuildSeedComboLimited(tier, possibleCombo);
+                if (result != null)
+                    break;
+            }
+            return result;
         }
 
-        public List<Seed> BuildSeedCombo (YieldTier tier, List<Seed> seeds, List<Seed> others)
+        public List<List<Seed>> GetSeedPermutationsRecurse(YieldTier tier, List<Seed> currentList, List<Seed> seedTypes)
+        {
+            if (currentList.Count > 4)
+                return new List<List<Seed>>() { currentList };
+
+            //get minmax info for the tier
+            (int min, int max) minMaxMod = GetTierMinMaxRankSum(tier);
+
+            //convert current list into list of counts
+            var countList = new List<(int, string)>();
+            foreach (var seed in seedTypes)
+            {
+                var count = currentList.Count();
+            }
+
+            var result = new List<List<Seed>>();
+
+            return result;
+        }
+
+        public List<Seed> BuildSeedCombo (YieldTier tier, List<Seed> seeds, Stack<Seed> stack, Seed preferred)
         {
             var remainingSpaces = 5 - seeds.Count();
-            if (remainingSpaces < 1)
+            if (remainingSpaces < 1 || stack.Count == 0)
                 return null;
             (int min, int max) minMaxMod = GetTierMinMaxRankSum(tier);
-            var currentGradeSum = seeds.Select(x => x.Grade).Sum();
+            var currentGradeSum = seeds.Any() ? seeds.Select(x => x.Grade).Sum() : 0;
             (int min, int max) minMaxGradeSum = GetTierMinMaxGradeSum(tier, minMaxMod, currentGradeSum);
             if (currentGradeSum == minMaxGradeSum.max)
                 return null;
             var currentMod = seeds.Select(x => x.Rank).Sum() % 12;
-            var stack = new Stack<Seed>(others);
 
             while (stack.Count() > 0)
             {
                 var seed = stack.Pop();
+
+                //if the grade is too big to be added, there's no point in continuing with this seed
                 if (minMaxGradeSum.max - currentGradeSum >= seed.Grade)
                 {
-                    others = stack.Where(x => x.Grade <= minMaxGradeSum.max - currentGradeSum).ToList();
+                    //winnow the list to those where the grade is not too big
+                    stack = new Stack<Seed>(stack.Where(x => x.Grade <= minMaxGradeSum.max - currentGradeSum));
+                    //we've already established the grade is not too big - now check if we've hit the minimum
+                    if (currentGradeSum + seed.Grade > minMaxGradeSum.min)
+                    {
+                        //if the score is right, then we got it!
+                        seeds.Add(seed);
+                        var score = GetScore(seeds, 0);
+                        if (score + 10 < tier.ScoreRange.Upper && score + 20 > tier.ScoreRange.Lower)
+                            return seeds;
 
+                        //...otherwise we have more sorting to do...
+                        currentGradeSum += seed.Grade;
+                        var seedsTest = seeds;
+                        var currentTypes = seedsTest.Distinct().OrderByDescending(x => x.Probability).ToList();
+                        remainingSpaces = 5 - seedsTest.Count;
+                        while (remainingSpaces < 5)
+                        {
+
+                        }
+                        
+                    }
 
                 } else
                 {
-
+                    //this seed can't be added - on to the next
+                    return BuildSeedCombo(tier, seeds, stack, preferred);
                 }
 
             }
+
+            return null;
         }
 
         public List<Seed> GetSeedCombo(Seed seed, YieldTier tier, Item item)
@@ -267,11 +335,11 @@ namespace GreenhouseCalc
             if (GetScore(seeds, 6) > tier.ScoreRange.Lower && GetScore(seeds, 1) < tier.ScoreRange.Upper)
                 return seeds;
 
-
             var rank = seed.Rank;
             var grade = seed.Grade;
             var seedMod = rank % 12;
             (int min, int max) minMaxMod = GetTierMinMaxRankSum(tier);
+            
             for (int i = 2; i < 6; i++)
             {
                 var seedComboMod = (seedMod * i) % 12;
@@ -293,11 +361,10 @@ namespace GreenhouseCalc
                 minMaxMod.min = 0;
             minMaxMod.max = minMaxMod.max - (seed.Rank % 12);
             var otherSeeds = OrderPossibleSeedsByProbability(item).Where(x => x.Item2.Name != seed.Name &&
-                                                                              x.Item2.Tiers.Any(y => Math.Floor(y.Tier) == Math.Floor(tier.Tier)))
+                                                                              Math.Floor(x.Item1.Tier) == Math.Floor(x.Item1.Tier))
                                                                   .Select(x => GetSeedByName(x.Item2.Name)).ToList();
             otherSeeds.Reverse();
             var seedStack = new Stack<Seed>(otherSeeds);
-            var combo = BuildSeedCombo(tier, seeds, seedStack);
 
             return seeds;
         }
@@ -317,34 +384,36 @@ namespace GreenhouseCalc
             return 1;
         }
 
-        public (int, List<Seed>) OptimizeItemChances(string itemName)
+        public List<(decimal, List<Seed>)> OptimizeItemChances(string itemName)
         {
             var item = ItemList.SingleOrDefault(x => x.Name == itemName);
             if (item == null)
-                return (-1, null); 
+                return null;
 
-            var possibleSeeds = OrderPossibleSeedsByProbability(item);
-            var possibleSeedTypes = possibleSeeds.Select(x => x.Item2.Name).Distinct();
-
-            decimal maxRatio = 0;
-            int optimalCultivationTier = 0;
-            List<Seed> maxRatioSeeds = null;
-            foreach (var seedRatio in possibleSeeds)
+            List<(YieldTier tier, Seed seed)> possibleSeeds = OrderPossibleSeedsByProbability(item);
+            possibleSeeds.Reverse();
+            var possibleSeedStack = new Stack<(YieldTier tier, Seed seed)>(possibleSeeds);
+            var results = new List<(decimal, List<Seed>)>();
+            //start with only using seeds that can yield the desired item
+            while (possibleSeedStack.Count > 0)
             {
-                var ratio = seedRatio.Item1;
-                var seed = GetSeedByName(seedRatio.Item2.Name);
-                var tier = GetTierByTier(seedRatio.Item2.Tiers[0].Tier);
-                var combo = GetSeedCombo(seed, tier, item);
-                var seedTypeRatio = (decimal)combo.Count(x => x.Name == seed.Name) / combo.Count;
-                if (seedTypeRatio * ratio > maxRatio)
-                {
-                    maxRatio = seedTypeRatio * ratio;
-                    maxRatioSeeds = combo;
-                    optimalCultivationTier = GetOptimalCultivationTier(combo, tier);
-                }
-            }
+                var seedRatio = possibleSeedStack.Pop();
+                var possibleSeedTypes = new Stack<Seed>(possibleSeedStack.Where(x => x.tier.Tier == seedRatio.tier.Tier)
+                                                         .Select(x => x.seed));
+                //get the best combo, using only these seeds & current seed as primary
+                var bestCombo = BuildSeedCombo(seedRatio.tier, new List<Seed>(), possibleSeedTypes, seedRatio.seed);
 
-            return (optimalCultivationTier, maxRatioSeeds);
+                //if it returned null, there was no way to do it
+                if (bestCombo == null)
+                    continue;
+
+                //calculate what the total probability of this combo is
+                decimal totalProbability = 0;
+                foreach (var seed in bestCombo.Distinct())
+                    totalProbability += (decimal)seed.Probability * (bestCombo.Count(x => x == seed) / bestCombo.Count);
+                results.Add((totalProbability, bestCombo));
+            }
+            return results;
         }
 
         public List<ItemSet> GetHarvest (List<string> seedStr, int cultivationTier)
